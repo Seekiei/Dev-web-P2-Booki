@@ -22,38 +22,33 @@ a {
 
 #container_nav {
     width: 381px;
-    height: 19px;
     display: flex;
 }
 
 nav {
     height: 74px;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
 
-.container_nav_bar1 {
+.container_nav_bar {
     display: flex;
     width: 50%;
     justify-content: center;
+    border-top: #ffff 3px solid;
 }
 
-.container_nav_bar2 {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-}
-
-.container_nav_bar1:hover {
-    border-top: #0065fc 3px solid;
-}
-
-.container_nav_bar2:hover {
+.container_nav_bar:hover {
     border-top: #0065fc 3px solid;
 }
 
 .link {
-    margin-top: 48px;
+    padding-top: 48px;
+    
+}
+.link:hover{
+    color: #0065fc;
 }
 
 /* Main */
@@ -62,7 +57,6 @@ h1 {
     margin-top: 63px;
     font-size: 22px;
     margin-bottom: 8px;
-    
 }
 
 h4 {
@@ -130,7 +124,7 @@ h4 {
 }
 
 .icon_localisation {
-    width: 45px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,46 +132,45 @@ h4 {
     background-color: #f4f3f3;
 }
 
-.recherche_filtre {
+.recherche-filtres {
     display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.recherche-filtres h2 {
+    margin-right: 32px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.recherche-filtres button {
+    display: flex;
+    align-items: center;
     font-size: 17px;
-    align-items: center;
-}
-.titre-filtre h3{
-    padding-right: 40px;
-    font-size: 18px;
-}
-.btn-filtre{
-    display: flex;
-    gap: 44px;
-}
-.btn-filtre div{
-    display: flex;
-    align-items: center;
+    font-weight: 700;
+    background-color: white;
     border: 2px solid #d9d9d9;
-    border-radius: 32px;
-    height: 48px;
+    border-radius: 25px;
+    height: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    transition-duration: 0.1s;
     cursor: pointer;
-    font-weight: bold;
 }
 
-.btn-filtre div p{
-    font-size: 17px;
+.recherche-filtres-boutton {
+    display: flex;
+    gap: 43px;
 }
 
-.btn-filtre i {
+.recherche-filtres button:hover {
+    background-color: #deebff;
+}
+
+.recherche-filtres i {
+    margin-right: 10px;
     color: #0065fc;
-    border-radius: 100%;
-    margin-right: 12px;
-    font-size: 20px;
-}
-
-.btn-filtre div:hover {
-    background-color: #DEEBFF;
-}
+} 
 
 /* div info */
 
@@ -407,7 +400,6 @@ h4 {
 
 .text-activites{
     padding: 20px 36px 21px 19px;
-
 }
 
 .text-activites h3{
@@ -465,12 +457,14 @@ footer ul li {
 
     /* Main */
 
-    .recherche_filtre{
-        width: 950px;
-    }
-    .btn-filtre{
+    .recherche-filtres-boutton {
         gap: 22px;
     }
+
+    .recherche-filtres-boutton button {
+        padding-left: 15px;
+        padding-right: 15px;
+    } 
     
     /* Section hebergement */
 
@@ -520,9 +514,6 @@ footer ul li {
 
     /* Section activites */
 
-    #activites{
-        height: ;
-    }
     .activites-card img{
         width: 182px;
         height: 211px;
@@ -537,6 +528,9 @@ footer ul li {
         align-items: center;
         height: 46px;
     }
+    .text-activites{
+        font-size: 16px;
+    }
 
     /* footer */
 
@@ -546,10 +540,158 @@ footer ul li {
     footer h2{
         font-weight: 700;
         font-size: 18px;
-        ma
     }
 }
 
 /* Media Query mobile */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 768px){
+    body{
+        max-width: 375px;
+        margin: auto;
+    }
+
+    /* header/navbar*/
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_nav_bar{
+        border-bottom: #d9d9d9 3px solid;
+        border-top: 0px;
+    }
+    .container_nav_bar:hover {
+        border-bottom: #0065fc 3px solid;
+        border-top: 0px;
+    }
+    .link {
+        padding-bottom: 23px;
+    }
+
+    /* main */
+
+    main{
+        margin-top: 63px;
+        padding: 0px 20px 0px 20px;
+    }
+    .recherche{
+        margin-top: 26px;
+    }
+    .recherche_btn{
+        display: none;
+    }
+    .loupe{
+        display: flex;
+    }
+    #recherche_loupe{
+        display: flex;
+    }
+    .recherche-filtres {
+        flex-direction: column;
+        margin-top: 34px;
+        align-items: flex-start;
+    }
+    .recherche-filtres-boutton {
+        flex-wrap: wrap;
+        width: 334px;
+        margin-top: 15px;
+        gap: 14px;
+    }
+    .recherche-filtres button i {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+    .recherche-filtres-boutton button {
+        height: 50px;
+        width: 160px;
+        font-size: 10px;
+    }
+
+    /* Section Hebergement */
+
+    #zones-hebergements{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .grid{
+        height: auto;
+    }
+    .fond-hebergements{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 28px 20px 0px 20px;
+        background-color: #FFFFFF;
+    }
+    .hebergement-card{
+        width: 100%;
+    }
+    .photo-hebergement img{
+        width: 335px;
+    }
+    .afficher-plus{
+        display: none;
+    }
+    
+     /* Section Populaire */
+
+    .fond-populaire{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 28px 21px 47px 20px;
+        border-radius: 0px;
+    }
+    .populaire-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .populaire-card{
+        width: 100%;
+    }
+    .photo-populaire{
+        width: 137px;
+    }
+    .photo-populaire img{
+        width: 137px;
+    }
+
+     /* Section Activites */
+
+    #activites{
+        padding: 0px;
+    }
+    .fond-activites{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 10px 22px 80px 19px;
+    }
+    .activites-card{
+        width: 100%;
+        height: 190px;
+    }
+    .activites-card img{
+        width: 100%;
+        height: 134px;
+    }
+    #activites h2{
+        width: 150px;
+        padding-left: 19px;
+    }
+
+     /* Section Footer */
+     
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 45px 130px 61px 33px;
+    }
+    .footer-info{
+        padding-bottom: 40px;
+    }
+    .footer-hebergement{
+        padding-bottom: 40px;
+    }
+}
