@@ -409,7 +409,7 @@ h4 {
     margin: 0px;
 }
 
-/* FOOTER */
+/* Footer */
 
 footer {
     background-color: #F2F2F2;
@@ -554,6 +554,7 @@ footer ul li {
     }
 
     /* header/navbar*/
+    
     nav{
         display: flex;
         flex-direction: column;
