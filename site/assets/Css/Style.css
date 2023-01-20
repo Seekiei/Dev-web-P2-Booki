@@ -226,8 +226,11 @@ h4 {
     height: 428px;
 }
 
+.cards-liens{
+    width: 30%;
+}
+
 .hebergement-card {
-    Width: 246px;
     height: 199px;
     background: #FFFFFF;
     margin-bottom: 30px;
@@ -282,7 +285,6 @@ h4 {
 .fond-populaire{
     width: 33%;
     background-color: #F2F2F2;
-    height: 625px;
     border-radius: 20px;
     box-sizing: border-box;
     padding: 42px 40px 34px 37px ;
@@ -573,10 +575,12 @@ footer ul li {
 
     main{
         margin-top: 63px;
-        padding: 0px 20px 0px 20px;
     }
     .recherche{
         margin-top: 26px;
+    }
+    .recherche_input{
+        padding: 0px 0px 0px 23px;
     }
     .recherche_btn{
         display: none;
@@ -617,6 +621,11 @@ footer ul li {
     .grid{
         height: auto;
     }
+
+   .cards-liens{
+    width: auto;
+   }
+
     .fond-hebergements{
         height: auto;
         display: flex;
