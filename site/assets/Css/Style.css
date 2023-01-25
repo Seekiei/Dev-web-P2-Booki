@@ -500,8 +500,8 @@ footer ul li {
         justify-content: space-between;
         width: 100%;
     }
-    .populaire-card{
-        width: 252px;
+    .cards-container{
+        width: 45%;
     }
     .photo-populaire{
         width: 106px;
@@ -664,6 +664,9 @@ footer ul li {
     }
     .populaire-card{
         width: 100%;
+    }
+    .cards-container{
+        width: auto;
     }
     .photo-populaire{
         width: 137px;
