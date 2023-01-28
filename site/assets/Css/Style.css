@@ -451,7 +451,7 @@ footer ul li {
 
 /* Media Query tablette */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     
     body{
         max-width: 880px;
@@ -552,7 +552,7 @@ footer ul li {
 
 /* Media Query mobile */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     body{
         max-width: 375px;
         margin: auto;
@@ -629,7 +629,7 @@ footer ul li {
     }
 
    .cards-liens{
-    width: auto;
+    width: 100%;
    }
 
     .fond-hebergements{
@@ -643,7 +643,7 @@ footer ul li {
         width: 100%;
     }
     .photo-hebergement img{
-        width: 335px;
+        width: 100%;
     }
     .afficher-plus{
         display: none;
