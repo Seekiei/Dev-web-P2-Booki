@@ -511,6 +511,7 @@ footer ul li {
     }
     .text-populaire{
         padding: 12px 4px 12px 10px;
+        width: 50%;
     }
     .container-text h3{
         font-size: 14px;
@@ -672,7 +673,7 @@ footer ul li {
         width: 137px;
     }
     .photo-populaire img{
-        width: 137px;
+        width: 100%;
     }
 
      /* Section Activites */
