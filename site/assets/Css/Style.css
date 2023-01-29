@@ -591,6 +591,7 @@ footer ul li {
     }
     .recherche_input{
         padding: 0px 17px 0px 23px;
+        width: 54%;
     }
     .recherche_btn{
         display: none;
